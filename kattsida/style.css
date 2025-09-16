@@ -1,0 +1,47 @@
+body{
+    background-color: #212121;
+}
+
+h3{
+    text-align:center;
+    color: white;
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: sans-serif;
+    
+}
+
+main{
+
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    width: 85%;
+    margin:auto;
+    
+
+
+    column-gap: 10px;
+}
+
+.test {
+    /* background-color: red; */
+    text-align: right;
+
+
+}
+img{
+    width: 400px;
+}
+
+
+.text{
+    /* background-color: blue; */
+    color: white;
+   
+}
+p{
+    margin-top: 0;
+    margin-bottom: 100;
+    font-family:sans-serif;
+}
+
