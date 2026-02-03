@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Melkers Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Navigation: enkel och tydlig meny -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">Min portfolio</a>
+            <a href="#" class="logo">Melkers Portfolio</a>
             <ul class="nav-menu">
-                <li><a href="#Hem" class="active">Hem</a></li>
-                <li><a href="#om">Om mig</a></li>
-                <li><a href="#projekt">projekt</a></li>
-                <li><a href="#kontakt">kontakt</a></li>
+                <li><a href="#" class="active">Hem</a></li>
+                <li><a href="#">Om mig</a></li>
+                <li><a href="#">Projekt</a></li>
+                <li><a href="#">Kontakt</a></li>
             </ul>
         </div>
     </nav>
-    
-    <section class="hero-header">
-        <div class="hero-content">
-            <h1 class="hero-title">Hej, jag är melker</h1>
-            <p class="hero-subtitle"> du är här</p>
 
-            <div class="hero-buttons">
-                <a href="#projekt" class="btn btn-primary">se mina projekt</a>
-                <a href="#kontakt" class="btn btn-secondary">kontakta mig</a>
+    <!-- Hero-sektion: presentation av mig + intressen -->
+    <header class="hero-header">
+        <div class="hero-content split">
+            <div class="hero-text">
+                <h1 class="hero-title">Hej, jag är Melker</h1>
+                <p class="hero-subtitle">
+                    Jag pluggar webbutveckling och håller på att bygga min första egna portfolio med HTML, CSS och JavaScript.
+                </p>
+
+                <!-- Knappar för att navigera vidare -->
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Se mina projekt</a>
+                    <a href="#" class="btn btn-secondary">Kontakta mig</a>
+                </div>
+            </div>
+
+            <!-- Kort med info om mina intressen -->
+            <div class="hero-card">
+                <p>Mina intressen:</p>
+                <ul>
+                    <li>Webbdesign</li>
+                    <li>Programmering</li>
+                    <li>Teknik</li>
+                </ul>
             </div>
         </div>
-
-    </section>
-
+    </header>
 
 </body>
 </html>

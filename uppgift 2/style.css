@@ -1,167 +1,182 @@
-*{
+/* Reset för alla element */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+/* Grundinställningar för kroppen */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0f172a; /* mörk bakgrund */
+    color: #e5e7eb; /* ljus text */
 }
 
-nav{
-    background-image: linear-gradient(135deg, #667eea, #764ba2);
+/* Navigation */
+nav {
+    background: rgba(15, 23, 42, 0.9); /* lite transparens */
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 10px rgb(0,0,0,0.1);
+    backdrop-filter: blur(10px); /* mjuk blur-effekt */
 }
 
-.nav-container{
-    max-width: 1200px;
+.nav-container {
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
-    z-index: 100;
+    align-items: center;
 }
-.logo{
-    color: white;
-    font-size: 1.5rem;
+
+.logo {
+    color: #22c55e; /* grön accent */
+    font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
-
 }
-.nav-menu{
+
+.nav-menu {
+    list-style: none;
     display: flex;
-    list-style-type: none;
-    gap: 2rem;
+    gap: 1.5rem;
 }
-.nav-menu a{
-    color: white;
+
+.nav-menu a {
+    color: #e5e7eb;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.nav-menu a:hover{
-    background-color: rgba(255, 255, 255, 0.2);
-
+.nav-menu a:hover {
+    background-color: #22c55e;
+    color: #020617;
 }
 
-.nav-menu a:active{
-    background-color: rgba(255, 255, 255, 0.3);
+/* Hero-sektion */
+.hero-header {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #0f172a, #020617); /* gradient bakgrund */
+    padding: 2rem;
+}
+
+.hero-content.split {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* vänster text, höger kort */
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease forwards; /* enkel fade-in */
+}
+
+.hero-subtitle {
+    max-width: 520px;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Knappar med hover-effekt */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 999px; /* rundade kanter */
+    text-decoration: none;
     font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
+/* Primär knapp med hover-animation */
+.btn-primary {
+    background-color: #22c55e;
+    color: #020617;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4);
+}
+
+/* Sekundär knapp */
+.btn-secondary {
+    border: 2px solid #22c55e;
+    color: #22c55e;
+}
+
+.btn-secondary:hover {
+    background-color: #22c55e;
+    color: #020617;
+}
+
+/* Kort med intressen */
+.hero-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    margin-top: 2rem;
+}
+
+.hero-card ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.hero-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsiv design */
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
         gap: 1rem;
     }
+
     .nav-menu {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
     }
-}
 
-/* hero */
+    .hero-content.split {
+        grid-template-columns: 1fr; /* stapla på mobil */
+        text-align: center;
+    }
 
-.hero-header{
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
-.hero-header::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.3);
-    z-index: 1;
-}
+    .hero-text {
+        text-align: center;
+    }
 
-.hero-content{
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 2rem;
-}
-
-.hero-title{
-    font-size: 3.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-}
-.hero-subtitle{
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-    line-height: 1.6;
-}
-.hero-buttons{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.btn{
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.btn-primary{
-    background: white;
-    color: #667eea;
-}
- 
-.btn-primary:hover {
-    background-color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
- 
-.btn-secondary {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-}
- 
-.btn-secondary:hover {
-    background-color: white;
-    color: blue;
-}
- 
-@media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem;
-    }
-    .hero-subtitle{
-        font-size: 1.2rem;
-    }
-    .hero-buttons{
-        flex-direction: column;
-        align-items: center;
-    }
-    .btn {
-        width: 80%;
-        max-width: 800px;
+        font-size: 2.2rem;
     }
 }
