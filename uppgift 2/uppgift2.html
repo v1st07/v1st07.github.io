@@ -51,7 +51,7 @@
     </header>
     
         <!-- Om mig -->
-    <section class="about-section">
+    <main class="about-section">
         <div class="about-container">
             <h2 class="section-title">Om mig</h2>
 
@@ -142,10 +142,26 @@
                  </div>
                  <!-- slut av projekt3 -->
             </div>
-
         </div>
-    </section>
+    </main>
 
+    <script>
+        function toggleLike(projectId) {
+            const button = document.querySelector(`#heart-${projectId}`).parentNode
+            const heart = document.querySelector(`#heart-${projectId}`)
+ 
+            if (button.classList.contains('liked')) {
+                button.classList.remove('liked')
+                heart.textContent = "🤍"
+                console.log ("unlike")
+            } else {
+                button.classList.add ('liked')
+                heart.textContent = "❤️"
+                console.log("like")
+            }
+        }
+    </script>
+ 
 
 </body>
 </html>
