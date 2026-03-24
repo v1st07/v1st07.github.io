@@ -1,0 +1,27 @@
+/* här har jag min css och jag använder mig av body för att ge body för att ge en bakrundsfärg på hella min sida med min boddy för det är helheten av sidan */
+body{
+background-color: red;
+}
+
+nav{
+    display: flex;
+    background-color: bisque;
+    padding: 1rem 1rem;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+/* här är min nav css jag använder mig av display flex för att bilden och texten ska komma brevid varanda. och bakrundsvärg så färgen på naven bytas. padding för att bilden ska flytas lite så den itne är tät intill kanterna. ich align items center för att få texten i mitten. och gap för stärre mellanrum mellan bilden och texten */
+
+.nav-img img {
+    border-radius: 6rem;
+}
+
+header{
+    
+    padding: 2rem;
+    background-color: white;
+
+}
+
+/* använd margin typ 80 % och margin aouto */
