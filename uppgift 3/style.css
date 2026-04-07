@@ -22,7 +22,43 @@ header{
     padding: 2rem;
     background-color: white;
     margin: 4%;
+    padding: 3rem;
+    
 
 }
+header img{
+    width: 35rem;   
+}
 
-/* använd margin typ 80 % och margin aouto */
+.hero-img{
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text{
+    background-color: yellow;
+}
+
+.article-ligandebilder img{
+    width: 40rem;
+    /* outline: 3px solid yellow; */
+}
+.article-sektion{
+    background-color: blue;
+    margin: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    padding: 3rem;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.article-sektion > *{
+    background-image: linear-gradient(45deg, white, black);
+}
+
+.stand-img img{
+    width: 41rem ;
+    
+}
