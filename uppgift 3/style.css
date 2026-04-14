@@ -35,21 +35,36 @@ header{
     display: flex;
     justify-content: space-between;
 
-    img {
-        max-width: 50%;
-    }
+    
 }
 
 .hero-text{
     background-color: yellow;
 }
 
-.article-ligandebilder img{
-    /* width: 40rem; */
-    /* outline: 3px solid yellow; */
+@media (max-width: 500px) {
+    .hero-section{
+        margin: 1%;
+        padding: 1rem;
+        
+    }
 }
+@media (max-width: 1860px) {
+    body {
+        background-color: purple;
+    }
+    .hero-img {
+        flex-direction: column;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+
 .article-sektion{
-    background-color: blue;
+    /* background-color: blue; */
     margin: 4%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,9 +73,9 @@ header{
     /* display: flex; */
     /* justify-content: space-between; */
 }
-.article-sektion > *{
+/* .article-sektion > *{
     background-image: linear-gradient(45deg, white, black);
-}
+} */
 
 /* .stand-img img{
     width: 41rem ;
@@ -73,15 +88,6 @@ img{
     max-width: 100%;
 }
 
-@media (max-width: 500px) {
-    body {
-        background-color: blue;
-    }
-    .hero-img {
-        flex-direction: column;
-
-        img {
-            max-width: 100%;
-        }
-    }
+p{
+    font-size: 150%;
 }
