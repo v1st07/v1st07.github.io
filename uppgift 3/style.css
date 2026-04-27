@@ -62,7 +62,6 @@ header{
     }
 }
 
-
 .article-sektion{
     /* background-color: blue; */
     margin: 4%;
@@ -90,4 +89,24 @@ img{
 
 p{
     font-size: 150%;
+}
+
+.footer-manager{
+
+    background-color: brown;
+    display: flex;
+    padding: 1rem;
+    /* gap: 10rem; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-manager img{
+    margin-right: 4rem;
+    margin-left: 4rem;
+    
+}
+.footer-manager p{
+    
 }
