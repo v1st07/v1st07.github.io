@@ -7,7 +7,136 @@
     <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<!-- TEMA-VAL OCH MOTIVERING
+Valt tema: [Arbete #4 - aliens]
+Varför: [jag valde detta temat för att jag tyckte aliens lät intresant]
+Bildhantering-utmaningar: [jag ser utmaning i storlekarna på de olika bilder ingen som är lika stor samt att dem bara almänt är väldigt stora ]
+Design-mål: [jag vill uppnå en snygg design och optimera bilderna så de ser bra ut i min layout]
+Teknisk nivå: [jag hoppas lära mig hur man optimera bilder på bästa sätt samt fina desings]
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- SESSIONSPLANERING - LEKTION [2]
+Dagens mål: [börja med min html cod samt lägga in alla bilder]
+Teknisk utmaning: [jag ska göra allt på egen hand vilket är svårare än när man fick hjälp av tobias]
+Bildhantering-fokus: [jag ska använda en liten ailien bild som typ logga på naven/hemsida]
+CSS-tekniker: [jag tänker använda mig av rem och pixlar beroende samt av text aline]
+Kvalitetsmål: [jag ska försöka va klar med nav denna lektion och börja med html till min hero]
+--><!-- SESSIONSPLANERING - LEKTION [3]
+Dagens mål: [mitt mål är att få in bilderna i min hero och optimera bilderna samt påbörja min andra section under hero]
+Teknisk utmaning: [svårt vad jag ska göra med min ny section har inte gjort det innan det är nytt]
+Bildhantering-fokus: [jag tänkte använda mig av de två stora bilderna och förminska dem]
+CSS-tekniker: [jag tänker använda mig av margin och marign auto]
+Problem från förra gången: [jag behöver byta ferg och bestäma ett tema då jag nu bara lägger ut alltig så det ser rätt ut och sen fixa tema samt lägga in bilderna gjorde jag inte det måste jag fixa]
+Kvalitetsmål: [jag vill va klar med min hero samt optimerat bilderna och gjort någorlunda mycket på min nästa section]
+-->
+<!-- SESSIONSPLANERING - LEKTION [4]
+Dagens mål: [idag ska jag göra klart min articale section och försöka påbörja min footer]
+Teknisk utmaning: [hur jag ska få bilderna att passa i min grid på min article]
+Bildhantering-fokus: [idag ska jag jobba med mina sista två bilder i min footer ]
+CSS-tekniker: [att använda mig av grid och fylla i gridsen med bilder]
+Problem från förra gången: [fick inte bilderna på rätt plats som jag ville i griden]
+Kvalitetsmål: [jag är nöjd med dagens arbete om jag är klar med min article och påbörjar lätt på footern]
+-->
+<!-- SESSIONSPLANERING - LEKTION [jobba hemma ]
+Dagens mål: [idag ska jag jobba med footern och det två sista bilderna]
+Teknisk utmaning: [inga direkta utmaningar]
+Bildhantering-fokus: [jag använder mig av två bilder som jag ska lägga i footern ]
+CSS-tekniker: [jag tänkte använda mig av flex wrap]
+Problem från förra gången: [förra veckan hade jag inte kollat igenom alla bilder och upptäkte att en av bilderna var ondödigt stor har nu fixat storleken på den]
+Kvalitetsmål: [jag är nöjd med dagens arbete när jag gjort klart min footer]
+-->
+<!-- SESSIONSPLANERING - LEKTION [5]
+Dagens mål: [idag ska jag fixa temat och försöka fixa min section så den blir mer optimerbar]
+Teknisk utmaning: [svårt är att fixa med grid-tamplate då jag inte är super bra på det]
+Bildhantering-fokus: [är klar med alla bilder ]
+CSS-tekniker: [planerar på att använda mig av backround color för att byta färg på tema]
+Problem från förra gången: [vill fixa min section då den inte är lika optimerbar som jag vill]
+Kvalitetsmål: [jag är nöjd med mitt arbete när jag valt ett bra tema och fått det att se fint ut]
+-->
+<!-- Denna sida är byggd med (nav, header, article, footer)
+för bättre struktur och tillgänglighet -->
+<body>
+    <!-- Navigationsmeny: innehåller en profilbild/logga och sidans titel -->
+    <nav>
+            <div class="nav-img">
+                <!-- Profilbild/logga (redigerad i iloveimg) -->
+                <img src="bilder_alien/4Aliens/Bubble_Head.jpg" alt="loggbild">
+            </div>
+            <div class="nav-text">
+                <h1>Aliens</h1>
+            </div>
+    </nav>
+ <!-- Header + Hero-sektion: första delen användaren ser -->
+ <section>
+    <header class="hero-section">
+        <div class="hero-split">
+            <!-- Bilder i hero-sektionen -->
+             <!-- Alla bilder är optimerade i förväg (storlek och filformat) för att förbättra laddningstid och prestanda på sidan -->
+            <div class="hero-img">
+                <img src="bilder_alien/4Aliens/Xenomorph_1_50.jpg" alt="Xenomorph">
+                <img src="bilder_alien/4Aliens/Hidden_Aliens_50.jpg" alt="Hidden_Aliens">
+            </div>
+             <!-- Textinnehåll i hero -->
+            <div class="hero-text">
+                <h2>BLABLA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, rem. Non, ut dolorem! Temporibus deleniti magnam ipsam accusamus perspiciatis, provident rerum molestias deserunt quae iste reprehenderit? Dicta delectus cumque inventore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quo aliquid quia asperiores consequatur quis id, hic dolorum officiis commodi culpa ipsam, tempora quam enim natus vitae saepe optio. Mollitia.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa inventore veritatis animi voluptatum ipsa, eum minus dolore sed tempore explicabo provident modi eligendi illo sequi illum mollitia nulla numquam deserunt.</p>
+            </div>
+        </div>
+    </header>
+      <!-- Artikel-sektion: huvudcontent -->
+    <article>
+        <div class="article-sektion">
+            <!-- Bildgalleri med olika aliens -->
+            <div class="article-bilder">
+                <img src="bilder_alien/4Aliens/Aliens_1_50.jpg" alt="aliens" class="alien">
+                <img src="bilder_alien/4Aliens/Green_Alien_50.jpg" alt="Green_Alien" class="alien2">
+                <img src="bilder_alien/4Aliens/megamind.jpg" alt="laddar" class="mega">
+            </div>
+            <!-- Text kopplad till artikeln -->
+            <div class="article-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iusto iste asperiores saepe, obcaecati quae maiores, ipsum, quidem nam expedita inventore? Vitae delectus laborum ratione. Veritatis delectus modi quia debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolor id vel itaque ex rem odio vero eum similique recusandae tempora doloribus amet, laudantium quaerat quidem consequuntur corporis dolore accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit neque non perspiciatis et cum. Soluta consequuntur veritatis incidunt, beatae odit at, provident non facere illum aut, laudantium adipisci nostrum magnam.</p>
+            </div>
+
+        </div>
+    </article>
+     <!-- Footer: sidans nederdel -->
+    <footer>
+        <div class="footer-manager">
+            <img src="bilder_alien/4Aliens/Alien_Woman.jpg" alt="alien women">
+            <!-- Copyright-text visar att det är min sida --> 
+            <p>&copy; 2026 Melker Simonsson Projekt 3</p>
+            <!-- Extra dekorativ bild -->
+            <img src="bilder_alien/4Aliens/Alien.png" alt="alien">
+            
+        </div>
+    </footer>
+
+</section>
+
+</body>
+</html>
+
+<!-- SLUTREFLEKTION - BILDHANTERINGSPROJEKT
+Ursprunglig plan: [Att skapa en sida med fokus på bilder och enkel layout för bilderna.]
+Faktiskt resultat: [Det blev väldigt likt min figma och min tanke på hur det skulle se ut.]
+Största utmaning: [Att få bilder i olika storlekar att passa i samma layout.]
+Bildoptimering: [jag använde mig av iloveimg.com och reduceimges.com och det som funka bäst va iloveimg.com ]
+Teknisk utveckling: [Lärt mig mer om grid, och hur man strukturerar HTML. och lite mer om hur man använder @media coriers och]
+Kvalitetsbedömning: [Jag är nöjd men kan förbättra responsivitet och design ytterligare.]
+Nästa projekt: [Jag vill lära mig mer om css och efecter så reaveal animations ]
+-->
     
 </body>
 </html>
